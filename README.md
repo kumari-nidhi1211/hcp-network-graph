@@ -28,7 +28,10 @@ This React-based interactive network visualisation tool allows users to explore 
 
 The app loads from a mock data file:
 
-⚙️ Development Setup
+---
+
+## ⚙️ Development Setup
+
 1. Clone the Repository
 - git clone https://github.com/your-username/hcp-network-graph.git
 - cd hcp-network-graph
