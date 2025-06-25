@@ -33,11 +33,17 @@ The app loads from a mock data file:
 ## ⚙️ Development Setup
 
 1. Clone the Repository
+
 - git clone https://github.com/your-username/hcp-network-graph.git
 - cd hcp-network-graph
+
 2. Install Dependencies
+
 - npm install
+
 3. Run the Development Server
+
 - npm run dev
 - Open http://localhost:5173 to view it in the browser.
 
+![Demo Screenshot](assets/demo.png)

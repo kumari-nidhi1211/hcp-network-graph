@@ -12,7 +12,7 @@ export const SearchBar: React.FC<{ onSearch: (name: string) => void }> = ({ onSe
         }}
       />
       <button className="w-[15vw] px-3 py-2 border rounded-lg text-sm text-gray-600">
-        Filter ▾
+        Filter ▽
       </button>
     </div>
   );
