@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Graph from 'graphology';
 import Sigma from 'sigma';
 import type { Attributes } from 'graphology-types';
@@ -164,21 +164,19 @@ export default function HCPNetworkGraph() {
 
   return (
     <div className="flex flex-col h-full relative">
-      <SearchBar onSearch={onSearch} />
-      <div className="flex flex-1 gap-4 mt-4">
-        <div className="flex-1 bg-white rounded-xl shadow p-4 relative">
-          <div
-            ref={containerRef}
-            className="absolute top-0 left-0 right-0 bottom-0 rounded-xl"
-          />
+        <SearchBar onSearch={onSearch} />
+				
+      <div className="flex flex-1 gap-4">
+        <div className="w-1/3 bg-white rounded-xl shadow p-4 overflow-y-auto">
+          <HCPDetail selectedNode={selectedNode} />
+        </div>
+        <div className="flex-1 bg-white rounded-xl shadow-lg relative overflow-hidden">
+          <div ref={containerRef} className="absolute top-0 left-0 right-0 bottom-0 rounded-xl" />
           <div
             ref={tooltipRef}
             className="absolute z-50 bg-white border border-gray-300 text-sm shadow-md p-2 rounded-md pointer-events-none transition-opacity duration-150"
             style={{ display: 'none' }}
           />
-        </div>
-        <div className="w-1/3 bg-white rounded-xl shadow p-4 overflow-y-auto">
-          <HCPDetail selectedNode={selectedNode} />
         </div>
       </div>
     </div>
