@@ -13,14 +13,16 @@
     "@types/react-dom": "^19.1.6",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^3.4.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.0"
   },
   "dependencies": {
+    "@react-sigma/core": "^5.0.4",
     "graphology": "^0.26.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "sigma": "^3.0.2"
+    "sigma": "^3.0.2",
+    "tippy.js": "^6.3.7"
   }
 }
